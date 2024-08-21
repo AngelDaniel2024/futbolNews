@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias de Fútbol</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Fútbol Noticias</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Partidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Equipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Jugadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Torneos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel de noticias destacadas -->
+    <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5> Kylian Mbappé Deslumbra con un Hat-Trick en la Champions League</h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>La Liga se Prepara para una Temporada Emocionante con Nuevos Fichajes Estelares</h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Erling Haaland Rompe Récords con Cuatro Goles en un Solo Partido</h5>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- Sección de noticias -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Últimas Noticias</h2>
+                <div class="card mb-3">
+                    <img src="messi.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lionel Messi Brilla en la Liga con un Gol y Dos Asistencias</h5>
+                        <p class="card-text">Lionel Messi continúa demostrando su grandeza en el fútbol al liderar a su equipo a una victoria impresionante en la liga. En el último partido, Messi anotó un gol crucial y dio dos asistencias, consolidando su posición como uno de los jugadores más influyentes del torneo.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <img src="cristiano.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cristiano Ronaldo Marca un Doble en la Victoria de su Equipo</h5>
+                        <p class="card-text">Cristiano Ronaldo sigue demostrando su capacidad goleadora al marcar dos goles en el último partido de liga, llevando a su equipo a una victoria contundente. Con estos tantos, Ronaldo refuerza su posición como uno de los máximos goleadores de la temporada.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Categorías</h2>
+                <div class="list-group">
+                    <a href="partidos.html" class="list-group-item list-group-item-action">Partidos</a>
+                    <a href="equipos.html" class="list-group-item list-group-item-action">Equipos</a>
+                    <a href="jugadores.html" class="list-group-item list-group-item-action">Jugadores</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
